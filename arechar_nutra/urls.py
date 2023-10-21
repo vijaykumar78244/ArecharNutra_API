@@ -12,6 +12,6 @@ urlpatterns = [
     path('api/social_responsibility/<int:pk>/', SocialResponsibilityDetail.as_view(), name='certification-detail'),
     path('api/social_media_urls/', SocialMediaURLList.as_view(), name='social-media-url-list'),
     path('api/social_media_urls/<int:pk>/', SocialMediaURLDetail.as_view(), name='social-media-url-detail'),
-
+    path('api/nested-data/', NestedDataView.as_view(), name='nested-data'),
 
 ]
